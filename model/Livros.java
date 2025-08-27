@@ -12,14 +12,14 @@ public class Livros {
 
         return livro;
     }
-    public void setLivro(){
+    public void setLivro(String livro){
 
         this.livro = livro;
     }
     public String getAutor(){
         return  autor;
     }
-    public void setAutor(){
+    public void setAutor(String autor){
         this.autor = autor;
 
     }

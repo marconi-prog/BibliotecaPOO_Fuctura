@@ -3,6 +3,7 @@ package biblioteca.model;
 public class Categoria {
     private String nome;
     private String descricao;
+
     public Categoria(String nome, String descricao){
         this.nome = nome;
         this.descricao = descricao;
@@ -12,7 +13,7 @@ public class Categoria {
 
         return nome;
     }
-    public void setNome(){
+    public void setNome(String nome){
 
         this.nome = nome;
     }
@@ -20,7 +21,7 @@ public class Categoria {
         return descricao;
 
     }
-    public void setDescricao(){
+    public void setDescricao(String descricao){
         this.descricao = descricao;
 
     }
