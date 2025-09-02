@@ -12,7 +12,7 @@ public class BibliotecaService {
     private List<Livros> livros = new ArrayList<>();
     private List<Usuarios> usuarios = new ArrayList<>();
 
-    public void AddCategoria(Categoria c){
+    public void AddCaTegoria(Categoria c){
         categoria.add(c);
     }
     public void AddLivros(Livros l){
@@ -20,6 +20,15 @@ public class BibliotecaService {
     }
     public void AddUsuario(Usuarios u){
         usuarios.add(u);
+    }
+    public boolean RemoverCategoria(String nome){
+        return categoria.removeIf(c ->c.getNome().equalsIgnoreCase(nome));
+    }
+    public boolean RemoverLivros(String livro){
+        return livros.removeIf(l -> l.getLivro().equalsIgnoreCase(livro));
+    }
+    public boolean RemoverUsuario(String usuario){
+        return usuarios.removeIf(u -> u.getNome().equalsIgnoreCase(usuario));
     }
     public void ListarCategoria(){
         if(categoria.isEmpty()){
