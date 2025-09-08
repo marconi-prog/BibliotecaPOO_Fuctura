@@ -3,14 +3,7 @@ package biblioteca.model;
 public class Livros {
     private String livro;
     private String autor;
-
-    public Livros(String livro, String autor){
-        this.livro = livro;
-        this.autor = autor;
-    }
-    public String getLivro(){
-
-        return livro;
+        print("olá")
     }
     public void setLivro(String livro){
 
